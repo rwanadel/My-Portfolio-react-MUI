@@ -1,5 +1,5 @@
 import { Typography, Link, IconButton } from "@mui/material";
-import { Phone, LocationOn, Telegram } from "@mui/icons-material";
+import { LocationOn, Telegram } from "@mui/icons-material";
 import { Twitter, Facebook, Instagram } from "@mui/icons-material";
 import "../styles/Footer.css"; // Add your custom CSS here
 
