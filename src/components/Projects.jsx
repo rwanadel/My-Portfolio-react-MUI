@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import "../styles/Projects.css";
+import { Typography } from "@mui/material";
 
 export default function Projects() {
   const imageRefs = useRef([]);
@@ -36,9 +37,23 @@ export default function Projects() {
   }, []);
 
   return (
-    <div>
+    <div style={{ marginBottom: "200px", marginTop: "100px" }}>
       <div>
-        <h1>My Projects</h1>
+        <Typography
+          variant="h1"
+          sx={{
+            textAlign: "center",
+            marginBottom: "20px",
+            fontSize: {
+              xs: "1.5rem", // small font size for extra-small screens
+              sm: "2rem", // medium font size for small screens
+              md: "2.5rem", // larger font size for medium screens
+              lg: "3rem", // large font size for large screens
+            },
+          }}
+        >
+          My Projects
+        </Typography>
       </div>
 
       <ImageList

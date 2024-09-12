@@ -1,0 +1,122 @@
+/* .parent {
+  display: flex;
+  justify-content: space-between;
+}
+.child1 {
+  width: 400px;
+  height: 500px;
+  background-color: #dfd3ca;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+p {
+  width: 400px;
+}
+.child2 > div {
+  display: flex;
+}
+.title {
+  margin-left: 40px;
+  text-align: left;
+  width: 200px;
+
+  color: #a88c77;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #dfd3ca;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  margin: 25px;
+}
+.parent2 {
+  display: flex;
+  justify-content: end;
+  margin-right: 230px;
+}
+.parent2 > span {
+  margin-top: 35px;
+} */
+
+/* Flexbox layout for the main container */
+.parent {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* For smaller screens, allows wrapping */
+}
+
+/* Styling the first child (About Me section) */
+.child1 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  background-color: #dfd3ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Styling the second child (info section) */
+.child2 {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Aligning labels and values in the same line */
+.child2 > div {
+  display: flex;
+  align-items: center; /* Align vertically in the center */
+  justify-content: space-between; /* Create space between the label and value */
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-left: 40px;
+  color: #a88c77;
+  width: auto;
+}
+
+/* Styling for the paragraph */
+p {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Styling for the icon section */
+.parent2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: nowrap; /* Prevent wrapping even on smaller screens */
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #dfd3ca;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 10px;
+}
+
+.parent2 > span {
+  margin-top: 0;
+  text-align: center;
+  margin: 0 10px;
+}
