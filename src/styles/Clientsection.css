@@ -1,0 +1,40 @@
+.parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+.circle {
+  border-radius: 50%;
+  background-color: #dfd3ca;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  margin: 25px;
+}
+
+@media (max-width: 768px) {
+  .parent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    margin: 15px;
+  }
+
+  .parent div {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle {
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    margin: 10px;
+  }
+}
